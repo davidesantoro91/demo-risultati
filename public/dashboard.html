@@ -194,6 +194,8 @@ function drawR(data){
 }
 
 async function resetAll(){if(confirm('Reset tutti i dati?')) await fetch('/api/risultati',{method:'DELETE'});}
+// Keep-alive: ping ogni 10 minuti
+setInterval(() => fetch('/api/risultati'), 600000);
 </script>
 </body>
 </html>
