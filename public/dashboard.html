@@ -210,7 +210,7 @@ function renderDash(dati){
       const col=gc(e.cat);
       return `<div class="chart-row" style="animation-delay:${i*.06}s">
         <div class="row-lbl">${e.cat}</div>
-        <div class="row-track"><div class="row-fill" style="width:${e.avg}%;background:${col}"><span class="row-cnt">${e.count} invio${e.count>1?'i':''}</span></div></div>
+        <div class="row-track"><div class="row-fill" style="width:${e.avg}%;background:${col}"><span class="row-cnt">${e.count} invi${e.count>1?'i':'o'}</span></div></div>
         <div class="row-val" style="color:${col}">${e.avg}%</div>
       </div>`;
     }).join('');
